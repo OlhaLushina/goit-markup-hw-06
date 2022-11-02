@@ -448,11 +448,11 @@
 
         <form action="" class="form-subscription">
           <label class="subscription-label"
-            ><p class="subscription-title">Підпишіться на розсилку</p>
+            ><span class="subscription-title">Підпишіться на розсилку</span>
 
             <input
               class="subscription-email"
-              type="text"
+              type="email"
               name="email"
               placeholder="E-mail" /></label
           ><button class="subscription-send" type="submit">
@@ -471,6 +471,53 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="form-order">
+          <label class="form-field">
+            <span class="form-label">Ім'я</span>
+            <div class="form-control">
+              <input type="text" class="form-input-text" name="name" />
+              <svg class="input-icon">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="form-field">
+            <span class="form-label">Телефон</span>
+            <div class="form-control">
+              <input type="tel" class="form-input-text" name="phone" />
+              <svg class="input-icon">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="form-field">
+            <span class="form-label">Пошта</span>
+            <div class="form-control">
+              <input type="email" class="form-input-text" name="email" />
+              <svg class="input-icon">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="form-field-comments">
+            <span class="form-label">Коментар</span>
+            <textarea
+              class="comments"
+              name="comments"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="form-field-agree">
+            <input type="checkbox" class="agree" name="agree" />
+            <span class="agree-icon"></span>
+            <span class="agree-label"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="" class="agree-link">&nbsp;Умови договору</a></span
+            >
+          </label>
+          <button class="order-send" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
